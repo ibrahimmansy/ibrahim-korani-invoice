@@ -1,0 +1,620 @@
+* {
+ padding: 0;
+ margin: 0;
+ font-family: sans-serif;
+}
+
+body {
+ background: #a9a9a9;
+ background: black;
+ width: 100%
+}
+
+header {
+ display: flex;
+ width: 100%;
+ height: 56px;
+ background: #2F4F4F;
+ 
+ 
+}
+
+nav {
+ 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 90%;
+ margin: auto;
+ 
+}
+
+nav .logo {
+ color: white;
+ text-decoration: none;
+ font-size: 32px
+}
+
+nav ul li {
+ display: inline-block;
+ margin: 0 0 0 10px
+ 
+ 
+}
+ 
+.container {
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+ grid-template-rows: repeat(27,150px);
+ grid-gap: 2px;
+ counter-increment: members-counter;
+
+}
+
+/* .container::before {
+    content: attr(data-color);
+     
+} */
+
+
+
+.box {
+ background: blue;
+ width: 100%;
+ color: #fff;
+ 
+ 
+/* border: 2px solid black;*/
+}
+
+.box-306 {
+    background: red
+}
+
+.box-1 {
+ background: #ed872d;
+/* grid-column-start: 1;
+ grid-column-end: 4;
+ grid-row: 1/9*/
+}
+
+
+.box-2 {
+ background: #ed872d;
+ /*grid-column: 4/6*/
+} 
+
+.box-3 {
+ background: #a52a2a;
+ /*grid-row: 2/5*/
+} 
+
+.box-4 {
+ background: #a52a2a;
+ /*grid-row: 2/5*/
+}
+
+.box-5 {
+ background: #681a1a
+}
+
+.box-6 {
+ background: #d57928
+}
+
+.box-7 {
+ background: #ee9342
+}
+
+.box-8 {
+ background: #942525
+}
+
+.box-9 {
+ background: #ae3f3f
+}
+
+.box-10 {
+ background: #7c2020
+}
+
+.box-11 {
+ background: #bd6c24
+}
+
+.box-12 {
+ background: 	#f09f56
+}
+
+.box-13 {
+ background: 	#842121
+}
+
+.box-14 {
+ background: 	#c06969
+}
+
+.box-15 {
+ background: 	#912525
+}
+
+.box-16 {
+ background: 	#a55e1f
+}
+
+.box-17 {
+ background: 	#f2ab6c
+}
+
+.box-18 {
+ background: 	#731d1d
+}
+
+.box-19 {
+ background: 	#c97f7f
+}
+
+.box-20 {
+ background: 	#a52a2a
+}
+
+.box-21 {
+ background: 	#8e511b
+}
+
+.box-22 {
+ background: 	#f4b781
+}
+
+.box-23 {
+ background: 	#631919
+}
+
+.box-24 {
+ background: 	#c97f7f
+}
+
+.box-25 {
+ background: 	#b92f2f
+}
+
+.box-26 {
+ background: #764316
+}
+
+.box-27 {
+ background: #f6c396
+}
+
+.box-28 {
+ background: #521515
+}
+
+.box-29 {
+ background: #d29494
+}
+
+.box-30 {
+ background: #cc3636
+}
+
+.box-31 {
+ background: #5e3612
+}
+
+.box-32 {
+ background: #f7cfab
+}
+
+.box-33 {
+ background: #421010
+}
+
+.box-34 {
+ background: #dba9a9
+}
+
+.box-35 {
+    background: #d14a4a
+}
+
+.box-36 {
+ background: #47280d
+}
+
+.box-37 {
+ background: #f9dbc0
+}
+
+.box-38 {
+ background: #310c0c
+}
+
+.box-39 {
+ background: #e4bfbf
+}
+
+.box-40{
+    background: #731d1d
+}
+
+.box-41 {
+ background: #2f1b09
+}
+
+.box-42 {
+ background: #fbe7d5
+}
+
+.box-43 {
+ background: #210808
+}
+
+.box-44 {
+ background: #edd4d4
+}
+
+.box-45 {
+background:#47280d
+}
+
+.box-46 {
+    background: #ee3d3d
+} 
+
+.box-47 {
+    background: #ee3b3b
+} 
+
+.box-48 {
+    background: #cd3333
+} 
+
+.box-49 {
+    background: #0048ba;
+} 
+
+.box-50 {
+    background: #0048ba
+} 
+
+.box-51 {
+    background: #d63535
+} 
+
+.box-52 {
+    background: #ef4e4e
+} 
+
+.box-53 {
+    background: #b82d2d
+} 
+
+.box-54 {
+    background: #0040a7
+} 
+
+.box-55 {
+    background: #195ac0
+} 
+
+.box-56 {
+    background: #be2f2f
+} 
+
+.box-57 {
+    background: #f16262
+} 
+
+.box-58 {
+    background: #a42828
+} 
+
+.box-59 {
+    background: #003994
+} 
+
+.box-60 {
+    background: #326cc7
+} 
+
+.box-61 {
+    background: #a62929;
+} 
+
+.box-62 {
+    background: #f37575;
+} 
+
+.box-63 {
+    background: #8f2323
+} 
+
+.box-64 {
+    background: #003282
+} 
+
+.box-65 {
+    background: #4c7ece
+} 
+
+.box-66 {
+    background: #8e2323;
+} 
+
+.box-67 {
+    background: #f48989;
+} 
+
+.box-68 {
+    background: #7d1e1e
+} 
+
+.box-69 {
+    background: #002b6f
+} 
+
+.box-70 {
+    background: #6691d5
+} 
+
+.box-71 {
+    background: #771d1d
+} 
+
+.box-72 {
+    background: #f69d9d
+} 
+
+.box-73 {
+    background: #661919
+} 
+
+.box-74 {
+    background: #00245d
+} 
+
+.box-75 {
+    background: #7fa3dc
+} 
+
+.box-76 {
+    background: #5f1717
+} 
+
+.box-77 {
+    background: #f8b0b0
+} 
+
+.box-78 {
+    background: #521414
+} 
+
+.box-79 {
+    background: #001c4a
+} 
+
+.box-80 {
+    background: #99b5e3
+} 
+
+.box-81 {
+    background: #471111
+} 
+
+.box-82 {
+    background: #f9c4c4
+} 
+
+.box-83 {
+    background: #3d0f0f
+} 
+
+.box-84 {
+    background: #001537
+} 
+
+.box-85 {
+    background: #b2c8ea
+} 
+
+.box-86 {
+    background: #2f0b0b
+} 
+
+.box-87 {
+    background: #fbd7d7
+} 
+
+.box-88 {
+    background: #290a0a
+} 
+
+.box-89 {
+    background: #000a25
+} 
+
+.box-90 {
+    background: #ccdaf1
+} 
+
+.box-91 {
+    background: #b0bf1a
+} 
+
+.box-92 {
+    background: #b0bf1a
+} 
+
+.box-93 {
+    background: #f0f8ff
+} 
+
+.box-94 {
+    background: #ffbf00
+} 
+
+.box-95 {
+    background: #ffbf00
+} 
+
+.box-96 {
+    background: #9eab17
+} 
+
+.box-97 {
+    background: #b7c530
+} 
+
+.box-98 {
+    background: #d8dfe5
+} 
+
+.box-99 {
+    background: #e5ab00
+} 
+
+.box-100 {
+    background: #ffc519
+} 
+
+
+.box-101 {
+    background: #8c9814
+} 
+
+.box-102 {
+    background: #bfcb47
+} 
+
+.box-103 {
+    background: #c0c6cc
+} 
+
+ .box-104 {
+    background: #cc9800
+} 
+
+.box-105 {
+    background: #ffcb32
+} 
+
+.box-106 {
+    background: #7b8512
+} 
+
+.box-107 {
+    background: #c7d25e
+} 
+
+.box-108 {
+    background: #a8adb2
+} 
+ 
+.box-109 {
+    background: #b28500
+} 
+
+.box-110 {
+    background: #ffd24c
+} 
+
+.box-111 {
+    background: #69720f
+} 
+
+.box-112 {
+    background: #cfd875
+} 
+
+.box-113 {
+    background: #909499
+} 
+ 
+.box-114 {
+    background: #997200
+} 
+
+.box-115 {
+    background: #ffd866
+} 
+
+.box-116 {
+    background: #585f0d
+} 
+
+.box-117 {
+    background: #d7df8c
+} 
+
+.box-118 {
+    background: #787c7f
+} 
+ 
+.box-119 {
+    background: #7f5f00
+} 
+
+.box-200 {
+    background: #ffdf7f
+} 
+
+.box-201 {
+    background: #464c0a
+} 
+
+.box-202 {
+    background: #dfe5a3
+} 
+
+.box-203 {
+    background: #606366
+} 
+ 
+.box-204 {
+    background: #664c00
+} 
+
+.box-205 {
+    background: #ffe599
+} 
+
+.box-206 {
+    background: #343907
+} 
+
+.box-207 {
+    background: #e7ebba
+} 
+
+.box-208 {
+    background: #484a4c
+} 
+
+.box-209 {
+    background: #4c3900
+}
+
+.box-300 {
+    background: #ffebb2
+} 
+
+.box-301 {
+    background:  #232605
+} 
+
+.box-302 {
+    background: #eff2d1
+} 
+
+.box-303 {
+    background: #303133
+} 
+
+.box-304 {
+    background: #332600
+} 
+
+.box-305 {
+    background: #fff2cc
+} 
